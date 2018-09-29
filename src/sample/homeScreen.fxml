@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeScreenController">
+   <children>
+      <AnchorPane prefHeight="373.0" prefWidth="861.0">
+         <children>
+            <MediaView fx:id="backgroundLoop" fitHeight="373.0" fitWidth="915.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="491.0" stroke="TRANSPARENT" strokeType="INSIDE" width="914.0">
+               <fill>
+                  <LinearGradient endX="0.9380952380952381" endY="0.05714285714285714" startX="0.9380952380952381" startY="0.9523809523809523">
+                     <stops>
+                        <Stop color="#000000df" />
+                        <Stop color="#ffffff00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <ImageView fx:id="atlantaImage" fitHeight="166.0" fitWidth="281.0" layoutX="621.0" layoutY="328.0" onMouseClicked="#atlanticClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/DIVISIONS/AtlanticCover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pacificImage" fitHeight="158.0" fitWidth="334.0" layoutX="14.0" layoutY="328.0" onMouseClicked="#pacificClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/DIVISIONS/PacificCover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="owwcImage" fitHeight="113.0" fitWidth="161.0" layoutX="405.0" layoutY="373.0" onMouseClicked="#owwcClicked" pickOnBounds="true" preserveRatio="true" style="-fx-focus-traversable: false;">
+               <image>
+                  <Image url="@OWL/DIVISIONS/OWWC.png" />
+               </image>
+            </ImageView>
+            <MenuBar layoutX="1.0" prefHeight="25.0" prefWidth="914.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#closeRequest" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#kickToBrowser" text="Open Standings in Browser" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ButtonBar layoutX="215.0" layoutY="56.0" prefHeight="40.0" prefWidth="200.0" />
+            <Button layoutX="890.0" mnemonicParsing="false" onMouseClicked="#closeRequest" text="X" />
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="14.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_DALLAS_FUEL.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="55.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_LA_VALIANT.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="106.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_LA_GLADIATORS.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="154.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_SF_SHOCK.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="205.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_SHAI_DRAGONS.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="254.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_SEOUL_DYNASTY.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="621.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_BOS_UPRISING.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="662.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_FLOR_MAYHEM.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="710.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_HOUS_OUTLAWS.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="762.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_PHILLY_FUSION.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="811.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_LNDN_SPITFIRE.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="860.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/OWL_NY_XL.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
