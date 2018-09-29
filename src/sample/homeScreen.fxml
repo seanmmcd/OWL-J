@@ -39,11 +39,6 @@
                   <Image url="@OWL/DIVISIONS/PacificCover.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="owwcImage" fitHeight="113.0" fitWidth="161.0" layoutX="405.0" layoutY="373.0" onMouseClicked="#owwcClicked" pickOnBounds="true" preserveRatio="true" style="-fx-focus-traversable: false;">
-               <image>
-                  <Image url="@OWL/DIVISIONS/OWWC.png" />
-               </image>
-            </ImageView>
             <MenuBar layoutX="1.0" prefHeight="25.0" prefWidth="914.0">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
@@ -60,6 +55,16 @@
             </MenuBar>
             <ButtonBar layoutX="215.0" layoutY="56.0" prefHeight="40.0" prefWidth="200.0" />
             <Button layoutX="890.0" mnemonicParsing="false" onMouseClicked="#closeRequest" text="X" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="382.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/globe-svg-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="owwcImage" fitHeight="113.0" fitWidth="161.0" layoutX="405.0" layoutY="351.0" onMouseClicked="#owwcClicked" pickOnBounds="true" preserveRatio="true" style="-fx-focus-traversable: false;">
+               <image>
+                  <Image url="@OWL/DIVISIONS/OWWC.png" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="14.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OWL_DALLAS_FUEL.png" />

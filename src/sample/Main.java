@@ -34,7 +34,7 @@ public class Main extends Application {
         try {
             media = new Media(f.toURI().toURL().toString());
         } catch (MalformedURLException e) {
-            System.out.println("   sss");
+            e.printStackTrace();
         }
         MediaPlayer player = new  MediaPlayer(media);
         player.setAutoPlay(true);
