@@ -8,6 +8,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import java.io.File;
 import java.net.MalformedURLException;
@@ -52,6 +53,8 @@ public class Main extends Application {
         backgroundLoop.fitWidthProperty().bind(root.widthProperty());
 
         backgroundLoop.toBack();
+
+        Font.loadFont(getClass().getResourceAsStream("/sample/OWL/bignoodletoo.ttf"), 14);
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
