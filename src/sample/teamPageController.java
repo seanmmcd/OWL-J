@@ -12,13 +12,14 @@ import java.net.URL;
 import java.awt.*;
 import java.util.ResourceBundle;
 
-public class teamPageController implements Initializable {
+public class teamPageController {
 
     //@FXML
 
+    public static int contTeamID = 0;
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-
+    public static void setTeamID(int teamID){
+        contTeamID = teamID;
+        return;
     }
 }

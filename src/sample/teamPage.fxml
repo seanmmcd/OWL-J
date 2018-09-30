@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeScreenController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.teamPageController">
    <children>
       <AnchorPane prefHeight="373.0" prefWidth="861.0">
          <children>
@@ -22,17 +22,17 @@
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem mnemonicParsing="false" onAction="#closeRequest" text="Close" />
+                    <MenuItem mnemonicParsing="false"  text="Close" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem mnemonicParsing="false" onAction="#kickToBrowser" text="Open Standings in Browser" />
+                    <MenuItem mnemonicParsing="false"  text="Open Standings in Browser" />
                   </items>
                 </Menu>
               </menus>
             </MenuBar>
-            <Button layoutX="890.0" mnemonicParsing="false" onMouseClicked="#closeRequest" text="X" />
+            <Button layoutX="890.0" mnemonicParsing="false"  text="X" />
             <ImageView fitHeight="106.0" fitWidth="117.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/ATLANTIC/OWL_NY_XL.png" />

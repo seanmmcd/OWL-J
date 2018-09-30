@@ -1,10 +1,15 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.media.MediaView;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -29,9 +34,14 @@ public class homeScreenController implements Initializable {
 
         //SCENE HANDLER
         public void switchScene(int teamID){
-
+                //Main.window.setScene();
+                Main.setScene();
+                return;
         }
 
+        public void setPrevStage(Stage previousStage){
+
+        }
         //TRANSITION PROCESSING
 
         public void atlanticClicked(){
@@ -50,21 +60,7 @@ public class homeScreenController implements Initializable {
         }
 
         public void teamClicked(int teamID){
-                switch (teamID){
-                        case 0  : break;        //DALLAS FUEL
-                        case 1  : break;        //LOS ANGELES VALIANT
-                        case 2  : break;        //LOS ANGELES GLADIATORS
-                        case 3  : break;        //SAN FRANCISCO SHOCK
-                        case 4  : break;        //SHANGHAI DRAGONS
-                        case 5  : break;        //SEOUL DYNASTY
-                        case 6  : break;        //BOSTON UPRISING
-                        case 7  : break;        //FLORIDA MAYHEM
-                        case 8  : break;        //HOUSTON OUTLAWS
-                        case 9  : break;        //PHILADELPHIA FUSION
-                        case 10 : break;        //LONDON SPITFIRE
-                        case 11 : break;        //NEW YORK EXCEL
-                        default : return;
-                }
+                switchScene(teamID);
                 return;
         }
 

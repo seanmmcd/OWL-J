@@ -1,7 +1,9 @@
 package sample;
 
+import com.sun.javafx.scene.SceneHelper;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
@@ -18,25 +20,31 @@ public class Main extends Application {
 
     private double x,y;
 
+    static Stage window;
     @Override
     public void start(Stage primaryStage) throws Exception{
         Pane root = FXMLLoader.load(getClass().getResource("homeScreen.fxml"));
-        primaryStage.setTitle("Overwatch E-Sports Official Standings");
+        Pane teamPage = FXMLLoader.load(getClass().getResource("teamPage.fxml"));
+        window = primaryStage;
+
+        window.setTitle("Overwatch E-Sports Official Standings");
 
 
-        primaryStage.initStyle(UNDECORATED);
+        window.initStyle(UNDECORATED);
 
-        primaryStage.getIcons().add(new Image("/sample/OWL/ICON.png"));
+        window.getIcons().add(new Image("/sample/OWL/ICON.png"));
 
-        primaryStage.setResizable(false);
+        window.setResizable(false);
 
         File f = new File("C:/Users/Aspen/Documents/GitHub/OWL-J/src/sample/OWL/menubackground.mp4");
         Media media = null;
+
         try {
             media = new Media(f.toURI().toURL().toString());
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+
         MediaPlayer player = new  MediaPlayer(media);
         player.setAutoPlay(true);
         MediaView backgroundLoop = new MediaView(player);
@@ -55,12 +63,14 @@ public class Main extends Application {
         backgroundLoop.toBack();
 
         Font.loadFont(getClass().getResourceAsStream("/sample/OWL/bignoodletoo.ttf"), 14);
-
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        Scene teamScene = new Scene(teamPage);
+        window.setScene(new Scene(root));
+        window.show();
     }
 
+    public static void setScene(){
 
+    }
     public static void main(String[] args) {
         launch(args);
     }
