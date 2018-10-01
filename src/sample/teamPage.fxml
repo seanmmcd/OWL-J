@@ -22,17 +22,17 @@
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem mnemonicParsing="false"  text="Close" />
+                    <MenuItem mnemonicParsing="false" text="Close" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem mnemonicParsing="false"  text="Open Standings in Browser" />
+                    <MenuItem mnemonicParsing="false" text="Open Standings in Browser" />
                   </items>
                 </Menu>
               </menus>
             </MenuBar>
-            <Button layoutX="890.0" mnemonicParsing="false"  text="X" />
+            <Button layoutX="890.0" mnemonicParsing="false" onMouseClicked="#closeRequest" text="X" />
             <ImageView fitHeight="106.0" fitWidth="117.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/ATLANTIC/OWL_NY_XL.png" />

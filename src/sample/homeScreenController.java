@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.MediaView;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -18,24 +19,22 @@ import java.awt.*;
 import java.util.ResourceBundle;
 
 public class homeScreenController implements Initializable {
-
         @FXML
         MediaView backgroundLoop;
         @FXML
         Text titleOW;
+        @FXML
+        ImageView pacificImage;
 
         @Override
         public void initialize(URL location, ResourceBundle resources){
                 Font OWfont = Font.loadFont(getClass().getResourceAsStream("/sample/OWL/bignoodletoo.ttf"), 48);
-
-                System.out.print(OWfont.toString());
                 titleOW.setFont(OWfont);
         }
 
         //SCENE HANDLER
         public void switchScene(int teamID){
-                //Main.window.setScene();
-                Main.setScene();
+                Main.ok();
                 return;
         }
 

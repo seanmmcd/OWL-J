@@ -22,4 +22,8 @@ public class teamPageController {
         contTeamID = teamID;
         return;
     }
+
+    public void closeRequest(){
+        System.exit(345);
+    }
 }
