@@ -4,8 +4,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.media.MediaView?>
@@ -45,66 +43,6 @@
               </menus>
             </MenuBar>
             <Button layoutX="890.0" mnemonicParsing="false" onMouseClicked="#closeRequest" text="X" />
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="14.0" layoutY="279.0" onMouseClicked="#fuelClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/PACIFIC/OWL_DALLAS_FUEL.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="55.0" layoutY="279.0" onMouseClicked="#valiantClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/PACIFIC/OWL_LA_VALIANT.PNG" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="106.0" layoutY="279.0" onMouseClicked="#gladiatorsClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/PACIFIC/OWL_LA_GLADIATORS.PNG" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="154.0" layoutY="279.0" onMouseClicked="#shockClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/PACIFIC/OWL_SF_SHOCK.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="205.0" layoutY="279.0" onMouseClicked="#dragonsClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/PACIFIC/OWL_SHAI_DRAGONS.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="254.0" layoutY="279.0" onMouseClicked="#dynastyClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/PACIFIC/OWL_SEOUL_DYNASTY.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="621.0" layoutY="279.0" onMouseClicked="#uprisingClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/ATLANTIC/OWL_BOS_UPRISING.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="662.0" layoutY="272.0" onMouseClicked="#mayhemClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/ATLANTIC/OWL_FLOR_MAYHEM.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="710.0" layoutY="279.0" onMouseClicked="#outlawsClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/ATLANTIC/OWL_HOUS_OUTLAWS.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="762.0" layoutY="279.0" onMouseClicked="#fusionClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/ATLANTIC/OWL_PHILLY_FUSION.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="811.0" layoutY="279.0" onMouseClicked="#spitfireClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/ATLANTIC/OWL_LNDN_SPITFIRE.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="41.0" layoutX="860.0" layoutY="279.0" onMouseClicked="#excelClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/ATLANTIC/OWL_NY_XL.png" />
-               </image>
-            </ImageView>
             <Text fx:id="titleOW" fill="WHITE" layoutX="147.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OVERWATCH E-SPORTS OFFICIAL STANDINGS">
                <font>
                   <Font name="BigNoodleTooOblique" size="51.0" />
