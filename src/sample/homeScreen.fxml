@@ -4,8 +4,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.media.MediaView?>
@@ -50,11 +48,6 @@
                   <Font name="BigNoodleTooOblique" size="51.0" />
                </font>
             </Text>
-            <ImageView fx:id="fuelIcon" fitHeight="40.0" fitWidth="40.0" layoutX="107.0" layoutY="246.0" onMouseClicked="#fuelClicked">
-               <image>
-                  <Image url="@OWL/PACIFIC/OWL_DALLAS_FUEL.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </children>

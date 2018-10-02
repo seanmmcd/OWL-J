@@ -111,25 +111,61 @@ public class Main extends Application {
         owwcIcon.setOnMouseClicked          (me -> window.setScene(sceneMap.get(1)));
 
 
-        //PACIFIC TEAM ICON CLICK PROCESSING
-        OWL_DALLAS_FUEL.setOnMouseClicked  (me -> {
-            teamPageControllerLocal.setTeamIcon(new Image("/sample/OWL/PACIFIC/OWL_DALLAS_FUEL.png"));
+        //ATLANTIC TEAM ICON CLICK PROCESSING
+        OWL_BOS_UPRISING.setOnMouseClicked (me -> {
+            teamPageControllerLocal.prepScene(0);
             window.setScene(sceneMap.get(1));
         });
-        OWL_LA_GLADIATORS.setOnMouseClicked(me -> {});
-        OWL_LA_VALIANT.setOnMouseClicked   (me -> {});
-        OWL_SEOUL_DYNASTY.setOnMouseClicked(me -> {});
-        OWL_SF_SHOCK .setOnMouseClicked    (me -> {});
-        OWL_SHAI_DRAGONS.setOnMouseClicked (me -> {});
+        OWL_FLA_MAYHEM.setOnMouseClicked   (me -> {
+            teamPageControllerLocal.prepScene(1);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_HOU_OUTLAWS.setOnMouseClicked  (me -> {
+            teamPageControllerLocal.prepScene(2);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_LON_SPITFIRE.setOnMouseClicked (me -> {
+            teamPageControllerLocal.prepScene(3);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_NYC_EXCEL.setOnMouseClicked    (me -> {
+            teamPageControllerLocal.prepScene(4);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_PHI_FUSION.setOnMouseClicked   (me -> {
+            teamPageControllerLocal.prepScene(5);
+            window.setScene(sceneMap.get(1));
+        });
 
 
-        //ATLANTIC TEAM ICON CLICK PROCESSING
-        OWL_BOS_UPRISING.setOnMouseClicked (me -> {});
-        OWL_FLA_MAYHEM.setOnMouseClicked   (me -> {});
-        OWL_HOU_OUTLAWS.setOnMouseClicked  (me -> {});
-        OWL_LON_SPITFIRE.setOnMouseClicked (me -> {});
-        OWL_NYC_EXCEL.setOnMouseClicked    (me -> {});
-        OWL_PHI_FUSION.setOnMouseClicked   (me -> {});
+        //PACIFIC TEAM ICON CLICK PROCESSING
+        OWL_DALLAS_FUEL.setOnMouseClicked  (me -> {
+            teamPageControllerLocal.prepScene(6);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_LA_GLADIATORS.setOnMouseClicked(me -> {
+            teamPageControllerLocal.prepScene(7);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_LA_VALIANT.setOnMouseClicked   (me -> {
+            teamPageControllerLocal.prepScene(8);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_SF_SHOCK .setOnMouseClicked    (me -> {
+            teamPageControllerLocal.prepScene(9);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_SEOUL_DYNASTY.setOnMouseClicked(me -> {
+            teamPageControllerLocal.prepScene(10);
+            window.setScene(sceneMap.get(1));
+        });
+        OWL_SHAI_DRAGONS.setOnMouseClicked (me -> {
+            teamPageControllerLocal.prepScene(11);
+            window.setScene(sceneMap.get(1));
+        });
+
+
+
 
         Font.loadFont(getClass().getResourceAsStream("/sample/OWL/bignoodletoo.ttf"), 14);
 
