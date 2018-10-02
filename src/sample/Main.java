@@ -1,12 +1,10 @@
 package sample;
 
-import com.sun.javafx.scene.SceneHelper;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -17,27 +15,36 @@ import javafx.scene.media.MediaView;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import java.io.File;
-import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.HashMap;
+import java.util.Map;
+
 import static javafx.stage.StageStyle.UNDECORATED;
 
 public class Main extends Application {
 
     private double x,y;
 
-    Stage window = null;
+    static Stage window = null;
+
+    public static Map<Integer,Scene> sceneMap = new HashMap<Integer,Scene>();
+    public static Map<Integer,Pane>  paneMap  = new HashMap<Integer,Pane>();
 
 
     FXMLLoader homeScreenLoader = new FXMLLoader(getClass().getResource("homeScreen.fxml"));
     FXMLLoader teamPageLoader   = new FXMLLoader(getClass().getResource("teamPage.fxml"));
 
-    homeScreenController homeScreenControllerLocal = homeScreenLoader.getController();
-    teamPageController   teamPageControllerLocal = teamPageLoader.getController();
+
+
+    static Pane homeScreen;
+    static Pane teamPage;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Pane homeScreen = homeScreenLoader.load();
-        Pane teamPage = teamPageLoader.load();
+        homeScreen = homeScreenLoader.load();
+        teamPage = teamPageLoader.load();
+        homeScreenController homeScreenControllerLocal = homeScreenLoader.getController();
+        teamPageController   teamPageControllerLocal = teamPageLoader.getController();
 
         window = primaryStage;
         window.setTitle("Overwatch E-Sports Official Standings");
@@ -99,99 +106,43 @@ public class Main extends Application {
 
         initializeAtlanticButtons(OWL_BOS_UPRISING, OWL_FLA_MAYHEM, OWL_HOU_OUTLAWS, OWL_LON_SPITFIRE, OWL_NYC_EXCEL, OWL_PHI_FUSION, homeScreen);
 
-        atlanticImage.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                window.setScene(new Scene(teamPage));
-            }
-        });
-        pacificImage.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                window.setScene(new Scene(teamPage));
-            }
-        });
-        owwcIcon.setOnMouseClicked(new EventHandler<MouseEvent>() {
-               public void handle(MouseEvent me) {
-                   window.setScene(new Scene(teamPage));
-               }});
+        atlanticImage.setOnMouseClicked     (me -> window.setScene(sceneMap.get(1)));
+        pacificImage.setOnMouseClicked      (me -> window.setScene(sceneMap.get(1)));
+        owwcIcon.setOnMouseClicked          (me -> window.setScene(sceneMap.get(1)));
 
 
         //PACIFIC TEAM ICON CLICK PROCESSING
-        OWL_DALLAS_FUEL.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(0, window, new Scene(teamPage));
-            }
+        OWL_DALLAS_FUEL.setOnMouseClicked  (me -> {
+            teamPageControllerLocal.setTeamIcon(new Image("/sample/OWL/PACIFIC/OWL_DALLAS_FUEL.png"));
+            window.setScene(sceneMap.get(1));
         });
-        OWL_LA_GLADIATORS.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(1, window, new Scene(teamPage));
-            }
-        });
-        OWL_LA_VALIANT.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(2, window, new Scene(teamPage));
-            }
-        });
-        OWL_SEOUL_DYNASTY.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(3, window, new Scene(teamPage));
-            }
-        });
-        OWL_SF_SHOCK .setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(4, window, new Scene(teamPage));
-            }
-        });
-        OWL_SHAI_DRAGONS.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(5, window, new Scene(teamPage));
-            }
-        });
+        OWL_LA_GLADIATORS.setOnMouseClicked(me -> {});
+        OWL_LA_VALIANT.setOnMouseClicked   (me -> {});
+        OWL_SEOUL_DYNASTY.setOnMouseClicked(me -> {});
+        OWL_SF_SHOCK .setOnMouseClicked    (me -> {});
+        OWL_SHAI_DRAGONS.setOnMouseClicked (me -> {});
 
 
         //ATLANTIC TEAM ICON CLICK PROCESSING
-        OWL_BOS_UPRISING.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(6, window, new Scene(teamPage));
-            }
-        });
-        OWL_FLA_MAYHEM.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(7, window, new Scene(teamPage));
-            }
-        });
-        OWL_HOU_OUTLAWS.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(8, window, new Scene(teamPage));
-            }
-        });
-        OWL_LON_SPITFIRE.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(9, window, new Scene(teamPage));
-            }
-        });
-        OWL_NYC_EXCEL.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(10, window, new Scene(teamPage));
-            }
-        });
-        OWL_PHI_FUSION.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent me) {
-                changeToTeamPage(11, window, new Scene(teamPage));
-            }
-        });
-
+        OWL_BOS_UPRISING.setOnMouseClicked (me -> {});
+        OWL_FLA_MAYHEM.setOnMouseClicked   (me -> {});
+        OWL_HOU_OUTLAWS.setOnMouseClicked  (me -> {});
+        OWL_LON_SPITFIRE.setOnMouseClicked (me -> {});
+        OWL_NYC_EXCEL.setOnMouseClicked    (me -> {});
+        OWL_PHI_FUSION.setOnMouseClicked   (me -> {});
 
         Font.loadFont(getClass().getResourceAsStream("/sample/OWL/bignoodletoo.ttf"), 14);
-        window.setScene(new Scene(homeScreen));
+
+        Scene homeScreenScene = new Scene(homeScreen);
+        Scene teamPageScene = new Scene(teamPage);
+
+        sceneMap.put(0, homeScreenScene);
+        sceneMap.put(1, teamPageScene);
+        paneMap.put(0, homeScreen);
+        paneMap.put(1, teamPage);
+
+        window.setScene(sceneMap.get(0));
         window.show();
-    }
-
-    public void setScene(){
-
-    }
-    public static void ok(){
-
-        return;
     }
 
     public void initializeDivisionButtons(ImageView imageATL, ImageView imagePAC, ImageView owwcIcon, ImageView owwcGlobe, Pane homeScreen){
@@ -323,12 +274,6 @@ public class Main extends Application {
         return;
     }
 
-    public void changeToTeamPage(int teamID, Stage window, Scene teamPage){
-        //prepTeamScene(teamID, teamPage);
-        window.setScene(teamPage);
-        return;
-    }
-
     public void changeToDivisionPage(int divID){
         //prepDivScene
 
@@ -337,11 +282,5 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
-}
-
-class scenePrep{
-    public static void ok(){
-
     }
 }

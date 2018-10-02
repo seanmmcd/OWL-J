@@ -2,27 +2,32 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.media.MediaView;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.net.URL;
-import java.awt.*;
 import java.util.ResourceBundle;
 
-public class teamPageController {
 
-    //@FXML
+public class teamPageController implements Initializable{
 
-    public static int contTeamID = 0;
+    @FXML
+    AnchorPane teamPageID;
+    @FXML
+    ImageView teamIcon;
 
-    public static void setTeamID(int teamID){
-        contTeamID = teamID;
-        return;
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
     }
 
+    public void goHome(){
+        Main.window.setScene(Main.sceneMap.get(0));
+    }
+
+    public void setTeamIcon(Image icon){
+        teamIcon.setImage(icon);
+    }
     public void closeRequest(){
         System.exit(345);
     }

@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.scene.media.MediaView;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -24,8 +25,9 @@ public class homeScreenController implements Initializable {
         @FXML
         Text titleOW;
         @FXML
-        ImageView pacificImage;
-
+        ImageView teamIcon;
+        @FXML
+        ImageView fuelIcon;
         @Override
         public void initialize(URL location, ResourceBundle resources){
                 Font OWfont = Font.loadFont(getClass().getResourceAsStream("/sample/OWL/bignoodletoo.ttf"), 48);
@@ -33,10 +35,7 @@ public class homeScreenController implements Initializable {
         }
 
         //SCENE HANDLER
-        public void switchScene(int teamID){
-                Main.ok();
-                return;
-        }
+
 
         public void setPrevStage(Stage previousStage){
 
@@ -59,20 +58,23 @@ public class homeScreenController implements Initializable {
         }
 
         public void teamClicked(int teamID){
-                switchScene(teamID);
+                ///switchScene(teamID);
                 return;
         }
-
 
         //PACIFIC PROCESSING
 
         public void fuelClicked(){
-                teamClicked(0);         //Opens new window for team.
+                Pane pane = Main.paneMap.get(1);
+
+                Scene temp = Main.sceneMap.get(1);
+
+                         //Opens new window for team.
                 return;
         }
 
         public void valiantClicked(){
-                teamClicked(1);         //Opens new window for team.
+                         //Opens new window for team.
                 return;
         }
 

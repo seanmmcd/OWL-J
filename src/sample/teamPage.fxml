@@ -14,10 +14,10 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.teamPageController">
    <children>
-      <AnchorPane prefHeight="373.0" prefWidth="861.0">
+      <AnchorPane fx:id="teamPageID" prefHeight="373.0" prefWidth="861.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6e6e6e88" height="491.0" stroke="TRANSPARENT" strokeType="INSIDE" width="914.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb0" height="106.0" layoutX="14.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb0" height="106.0" layoutX="15.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
             <MenuBar layoutX="1.0" prefHeight="25.0" prefWidth="914.0">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
@@ -33,21 +33,222 @@
               </menus>
             </MenuBar>
             <Button layoutX="890.0" mnemonicParsing="false" onMouseClicked="#closeRequest" text="X" />
-            <ImageView fitHeight="106.0" fitWidth="117.0" layoutX="20.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/ATLANTIC/OWL_NY_XL.png" />
-               </image>
-            </ImageView>
-            <Text layoutX="143.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":TEAM_NAME:">
+            <Text layoutX="143.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":TEAM_NAME:">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <Button layoutX="1.0" layoutY="25.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="117.0" text="RETURN HOME">
+            <Button layoutX="15.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#goHome" prefHeight="37.0" prefWidth="117.0" text="RETURN HOME">
                <font>
                   <Font name="BigNoodleTooOblique" size="20.0" />
                </font>
             </Button>
+            <ImageView fitHeight="37.0" fitWidth="32.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/TWITTER_ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="30.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/FB_ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="62.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/TWITCH_ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="teamIcon" fitHeight="106.0" fitWidth="117.0" layoutX="21.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/PACIFIC/OWL_LA_VALIANT.PNG" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="283.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="322.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="361.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Text layoutX="602.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="128.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="602.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+            <Text layoutX="604.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="604.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Roadhog.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Reinhardt.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Soldier_76.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Reaper.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Brigitte.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Ana.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Tracer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Winston.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="861.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/HEROES/Icon-Wrecking_Ball.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="602.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GLADIATORS ROSTER">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="48.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="16.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="16.0" layoutY="324.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="16.0" layoutY="363.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="16.0" layoutY="402.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="16.0" layoutY="247.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="40.0" layoutX="16.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Text layoutX="16.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CURRENT LEAGUE STANDINGS">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="48.0" />
+               </font>
+            </Text>
+            <Text layoutX="16.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="18.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="18.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="18.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="18.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="18.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PLAYER_NAME:">
+               <font>
+                  <Font name="BigNoodleTooOblique" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="376.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/PACIFIC/OWL_SHAI_DRAGONS.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="376.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/PACIFIC/OWL_SF_SHOCK.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="375.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/PACIFIC/OWL_SEOUL_DYNASTY.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="375.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/PACIFIC/OWL_LA_VALIANT.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="375.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/PACIFIC/OWL_LA_GLADIATORS.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="375.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OWL/PACIFIC/OWL_DALLAS_FUEL.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>
