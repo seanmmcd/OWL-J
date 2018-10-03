@@ -20,14 +20,12 @@ import java.awt.*;
 import java.util.ResourceBundle;
 
 public class homeScreenController implements Initializable {
-        @FXML
-        MediaView backgroundLoop;
-        @FXML
-        Text titleOW;
-        @FXML
-        ImageView teamIcon;
-        @FXML
-        ImageView fuelIcon;
+
+        @FXML MediaView backgroundLoop;
+        @FXML Text titleOW;
+        @FXML ImageView teamIcon;
+        @FXML ImageView fuelIcon;
+
         @Override
         public void initialize(URL location, ResourceBundle resources){
                 Font OWfont = Font.loadFont(getClass().getResourceAsStream("/sample/OWL/bignoodletoo.ttf"), 48);

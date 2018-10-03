@@ -61,6 +61,9 @@ public class Main extends Application {
             e.printStackTrace();
         }
 
+        gsonManager gsonMan = new gsonManager();
+        gsonMan.init();
+
         MediaPlayer player = new  MediaPlayer(media);
         player.setAutoPlay(true);
         MediaView backgroundLoop = new MediaView(player);

@@ -63,7 +63,7 @@
                   <Image url="@OWL/ATLANTIC/OWL_NY_XL.png" />
                </image>
             </ImageView>
-            <Text layoutX="429.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GLADIATORS ROSTER">
+            <Text layoutX="429.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EXCELSIOR ROSTER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>

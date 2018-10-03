@@ -13,14 +13,10 @@ import java.util.ResourceBundle;
 
 public class teamPageController implements Initializable{
 
-    @FXML
-    AnchorPane teamPageID;
-    @FXML
-    ImageView teamIcon;
-    @FXML
-    Text teamName;
-    @FXML
-    Text standingsHeader;
+    @FXML AnchorPane teamPageID;
+    @FXML ImageView teamIcon;
+    @FXML Text teamName;
+    @FXML Text standingsHeader;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
