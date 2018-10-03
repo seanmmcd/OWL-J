@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.teamPageController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.teamPageController">
    <children>
       <AnchorPane fx:id="teamPageID" prefHeight="498.0" prefWidth="1152.0">
          <children>
@@ -142,7 +142,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/SBOYE.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
@@ -165,7 +165,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAEBYEOLBE">
+            <Text layoutX="534.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -178,7 +178,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/MEKO.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
@@ -201,7 +201,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meko">
+            <Text layoutX="887.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -214,7 +214,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/SBOYE.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
@@ -237,7 +237,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAEBYEOLBE">
+            <Text layoutX="534.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -250,7 +250,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/SBOYE.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
@@ -273,7 +273,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAEBYEOLBE">
+            <Text layoutX="887.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -286,7 +286,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/SBOYE.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
@@ -309,7 +309,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAEBYEOLBE">
+            <Text layoutX="534.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -322,7 +322,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/SBOYE.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
@@ -345,7 +345,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAEBYEOLBE">
+            <Text layoutX="887.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -358,7 +358,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/SBOYE.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
@@ -381,7 +381,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAEBYEOLBE">
+            <Text layoutX="534.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -394,7 +394,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
             <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/SBOYE.png" />
+                  <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
@@ -417,7 +417,7 @@
                   <Image url="@OWL/HEROES/Icon-Symmetra.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAEBYEOLBE">
+            <Text layoutX="887.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
