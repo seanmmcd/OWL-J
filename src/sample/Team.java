@@ -6,7 +6,7 @@ public class Team {
     private String teamSocialFacebook = "DEFAULT";
     private String teamSocialTwitch   = "DEFAULT";
 
-    public Player[] roster = new Player[7];
+    public Player[] roster = new Player[10];
 
     private Player player0 = new Player();
     private Player player1 = new Player();
