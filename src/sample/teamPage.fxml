@@ -17,7 +17,7 @@
       <AnchorPane fx:id="teamPageID" prefHeight="498.0" prefWidth="1152.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6e6e6e88" height="498.0" layoutX="-7.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1158.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb0" height="106.0" layoutX="15.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb0" height="106.0" layoutX="20.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
             <MenuBar layoutX="1.0" prefHeight="25.0" prefWidth="1152.0">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
@@ -43,27 +43,12 @@
                   <Font name="BigNoodleTooOblique" size="20.0" />
                </font>
             </Button>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="132.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/TWITTER_ICON.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="164.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/FB_ICON.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="199.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/TWITCH_ICON.png" />
-               </image>
-            </ImageView>
             <ImageView fx:id="teamIcon" fitHeight="106.0" fitWidth="117.0" layoutX="21.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/ATLANTIC/OWL_NY_XL.png" />
                </image>
             </ImageView>
-            <Text layoutX="429.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EXCELSIOR ROSTER">
+            <Text fx:id="rosterText" layoutX="429.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EXCELSIOR ROSTER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
@@ -140,293 +125,253 @@
                </image>
             </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player1Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player1Role" fitHeight="52.0" fitWidth="57.0" layoutX="731.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OffenseIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player1Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player1Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="661.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player1Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="731.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player1Name" layoutX="534.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="708.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player5Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player5Role" fitHeight="52.0" fitWidth="57.0" layoutX="1084.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TankIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player5Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player5Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1014.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player5Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="1084.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player5Name" layoutX="887.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1061.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player2Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player2Role" fitHeight="52.0" fitWidth="57.0" layoutX="731.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OffenseIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player2Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player2Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="661.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player2Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="731.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player2Name" layoutX="534.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="708.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player6Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player6Role" fitHeight="52.0" fitWidth="57.0" layoutX="1084.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OffenseIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player6Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player6Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1014.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player6Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="1084.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player6Name" layoutX="887.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1061.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player3Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player3Role" fitHeight="52.0" fitWidth="57.0" layoutX="731.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OffenseIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player3Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player3Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="661.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player3Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="731.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player3Name" layoutX="534.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="708.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player7Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player7Role" fitHeight="52.0" fitWidth="57.0" layoutX="1084.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OffenseIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player7Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player7Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1014.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player7Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="1084.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player7Name" layoutX="887.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1061.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="426.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player4Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="426.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="708.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player4Role" fitHeight="52.0" fitWidth="57.0" layoutX="731.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OffenseIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player4Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="548.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player4Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="583.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="661.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player4Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="731.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="534.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player4Name" layoutX="534.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="708.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1de" height="100.0" layoutX="779.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
-            <ImageView fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player8Headshot" fitHeight="100.0" fitWidth="106.0" layoutX="779.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/NULL_PLAYER.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="1061.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player8Role" fitHeight="52.0" fitWidth="57.0" layoutX="1084.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/OffenseIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player8Twitch" fitHeight="37.0" fitWidth="37.0" layoutX="901.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITCH_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player8Twitter" fitHeight="37.0" fitWidth="32.0" layoutX="936.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@OWL/TWITTER_ICON.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1014.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="player8Hero1" fitHeight="52.0" fitWidth="47.0" layoutX="1084.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
+                  <Image url="@OWL/HEROES/ana.png" />
                </image>
             </ImageView>
-            <Text layoutX="887.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+            <Text fx:id="player8Name" layoutX="887.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
                <font>
                   <Font name="BigNoodleTooOblique" size="48.0" />
                </font>
             </Text>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="1061.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OWL/HEROES/Icon-Symmetra.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </children>

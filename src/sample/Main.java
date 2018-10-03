@@ -116,54 +116,54 @@ public class Main extends Application {
 
         //ATLANTIC TEAM ICON CLICK PROCESSING
         OWL_BOS_UPRISING.setOnMouseClicked (me -> {
-            teamPageControllerLocal.prepScene(0);
+            teamPageControllerLocal.prepScene(3 ,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_FLA_MAYHEM.setOnMouseClicked   (me -> {
-            teamPageControllerLocal.prepScene(1);
+            teamPageControllerLocal.prepScene(8,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_HOU_OUTLAWS.setOnMouseClicked  (me -> {
-            teamPageControllerLocal.prepScene(2);
+            teamPageControllerLocal.prepScene(2,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_LON_SPITFIRE.setOnMouseClicked (me -> {
-            teamPageControllerLocal.prepScene(3);
+            teamPageControllerLocal.prepScene(11,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_NYC_EXCEL.setOnMouseClicked    (me -> {
-            teamPageControllerLocal.prepScene(4);
+            teamPageControllerLocal.prepScene(4,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_PHI_FUSION.setOnMouseClicked   (me -> {
-            teamPageControllerLocal.prepScene(5);
+            teamPageControllerLocal.prepScene(1,gsonMan);
             window.setScene(sceneMap.get(1));
         });
 
 
         //PACIFIC TEAM ICON CLICK PROCESSING
         OWL_DALLAS_FUEL.setOnMouseClicked  (me -> {
-            teamPageControllerLocal.prepScene(6);
+            teamPageControllerLocal.prepScene(0,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_LA_GLADIATORS.setOnMouseClicked(me -> {
-            teamPageControllerLocal.prepScene(7);
+            teamPageControllerLocal.prepScene(7,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_LA_VALIANT.setOnMouseClicked   (me -> {
-            teamPageControllerLocal.prepScene(8);
+            teamPageControllerLocal.prepScene(6,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_SF_SHOCK .setOnMouseClicked    (me -> {
-            teamPageControllerLocal.prepScene(9);
+            teamPageControllerLocal.prepScene(5,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_SEOUL_DYNASTY.setOnMouseClicked(me -> {
-            teamPageControllerLocal.prepScene(10);
+            teamPageControllerLocal.prepScene(10,gsonMan);
             window.setScene(sceneMap.get(1));
         });
         OWL_SHAI_DRAGONS.setOnMouseClicked (me -> {
-            teamPageControllerLocal.prepScene(11);
+            teamPageControllerLocal.prepScene(9,gsonMan);
             window.setScene(sceneMap.get(1));
         });
 
@@ -268,8 +268,8 @@ public class Main extends Application {
     public void initializeAtlanticButtons(ImageView rise, ImageView mayh, ImageView outl, ImageView spit, ImageView excel, ImageView fusion, Pane homeScreen){
         rise.setFitHeight(86);
         rise.setFitWidth(41);
-        rise.setLayoutX(621);
-        rise.setLayoutY(279);
+        rise.setLayoutX(622);
+        rise.setLayoutY(272);
         rise.setPickOnBounds(true);
         rise.setPreserveRatio(true);
 

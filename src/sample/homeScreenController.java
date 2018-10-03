@@ -56,23 +56,19 @@ public class homeScreenController implements Initializable {
         }
 
         public void teamClicked(int teamID){
-                ///switchScene(teamID);
+                //switchScene(teamID);
                 return;
         }
 
         //PACIFIC PROCESSING
 
         public void fuelClicked(){
-                Pane pane = Main.paneMap.get(1);
-
-                Scene temp = Main.sceneMap.get(1);
-
-                         //Opens new window for team.
+                teamClicked(2);//Opens new window for team.
                 return;
         }
 
         public void valiantClicked(){
-                         //Opens new window for team.
+                teamClicked(2);//Opens new window for team.
                 return;
         }
 
