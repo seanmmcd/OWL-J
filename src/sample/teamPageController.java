@@ -184,62 +184,62 @@ public class teamPageController implements Initializable {
         switch (teamID){
             case 3 :    //pullTeamJson();
 
-                        teamIcon.setImage(new Image("/sample/OWL/ATLANTIC/OWL_BOS_UPRISING.png"));
+                        teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_BOS_UPRISING.png")));
                         teamName.setText("BOSTON UPRISING");
                         rosterText.setText("UPRISING ROSTER");
                         break;         //UPRISING
 
-            case 8 :    teamIcon.setImage(new Image("/sample/OWL/ATLANTIC/OWL_FLOR_MAYHEM.png"));
+            case 8 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_FLOR_MAYHEM.png")));
                         teamName.setText("FLORIDA MAYHEM");
                         rosterText.setText("MAYHEM ROSTER");
                         break;         //MAYHEM
 
-            case 2 :    teamIcon.setImage(new Image("/sample/OWL/ATLANTIC/OWL_HOUS_OUTLAWS.png"));
+            case 2 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_HOUS_OUTLAWS.png")));
                         teamName.setText("HOUSTON OUTLAWS");
                         rosterText.setText("OUTLAWS ROSTER");
                         break;         //OUTLAWS
 
-            case 11 :   teamIcon.setImage(new Image("/sample/OWL/ATLANTIC/OWL_LNDN_SPITFIRE.png"));
+            case 11 :   teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_LNDN_SPITFIRE.png")));
                         teamName.setText("LONDON SPITFIRE");
                         rosterText.setText("SPITFIRE ROSTER");
                         break;         //SPITFIRE
 
-            case 4 :    teamIcon.setImage(new Image("/sample/OWL/ATLANTIC/OWL_NY_XL.png"));
+            case 4 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_NY_XL.png")));
                         teamName.setText("NEW YORK EXCELSIOR");
                         rosterText.setText("EXCELSIOR ROSTER");
                         break;         //EXCELSIOR
 
-            case 1 :    teamIcon.setImage(new Image("/sample/OWL/ATLANTIC/OWL_PHILLY_FUSION.png"));
+            case 1 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_PHILLY_FUSION.png")));
                         teamName.setText("PHILADELPHIA FUSION");
                         rosterText.setText("FUSION ROSTER");
                         break;         //FUSION
 
-            case 0 :    teamIcon.setImage(new Image("/sample/OWL/PACIFIC/OWL_DALLAS_FUEL.png"));
+            case 0 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_DALLAS_FUEL.png")));
                         teamName.setText("DALLAS FUEL");
                         rosterText.setText("FUEL ROSTER");
                         break;         //FUEL
 
-            case 7 :    teamIcon.setImage(new Image("/sample/OWL/PACIFIC/OWL_LA_GLADIATORS.png"));
+            case 7 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_LA_GLADIATORS.png")));
                         teamName.setText("LA GLADIATORS");
                         rosterText.setText("GLADIATORS ROSTER");
                         break;         //GLADIATORS
 
-            case 6 :    teamIcon.setImage(new Image("/sample/OWL/PACIFIC/OWL_LA_VALIANT.png"));
+            case 6 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_LA_VALIANT.png")));
                         teamName.setText("LA VALIANT");
                         rosterText.setText("VALIANT ROSTER");
                         break;         //VALIANT
 
-            case 5 :    teamIcon.setImage(new Image("/sample/OWL/PACIFIC/OWL_SF_SHOCK.png"));
+            case 5 :    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_SF_SHOCK.png")));
                         teamName.setText("SAN FRANCISCO SHOCK");
                         rosterText.setText("SHOCK ROSTER");
                         break;         //SHOCK
 
-            case 10:    teamIcon.setImage(new Image("/sample/OWL/PACIFIC/OWL_SEOUL_DYNASTY.png"));
+            case 10:    teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_SEOUL_DYNASTY.png")));
                         teamName.setText("SEOUL DYNASTY");
                         rosterText.setText("DYNASTY ROSTER");
                         break;         //DYNASTY
 
-            case 9:     teamIcon.setImage(new Image("/sample/OWL/PACIFIC/OWL_SHAI_DRAGONS.png"));
+            case 9:     teamIcon.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_SHAI_DRAGONS.png")));
                         teamName.setText("SHANGHAI DRAGONS");
                         rosterText.setText("DRAGONS ROSTER");
                         break;         //DRAGONS
@@ -253,7 +253,7 @@ public class teamPageController implements Initializable {
             player1Headshot.setImage(new Image(team.roster[0].statHeadshot.toString()));
             System.out.println( team.roster[0].statHero1);
             player1Hero1.setImage(team.roster[0].statHero1);
-            player1Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[0].statRole + ".png"));
+            player1Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[0].statRole + ".png")));
             player1Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[0].socTwitch).toURI());
@@ -279,7 +279,7 @@ public class teamPageController implements Initializable {
             player2Headshot.setImage(new Image(team.roster[1].statHeadshot.toString()));
             System.out.println( team.roster[1].statHero1);
             player2Hero1.setImage(team.roster[1].statHero1);
-            player2Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[1].statRole + ".png"));
+            player2Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[1].statRole + ".png")));
             player2Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[1].socTwitch).toURI());
@@ -305,7 +305,7 @@ public class teamPageController implements Initializable {
             player3Headshot.setImage(new Image(team.roster[2].statHeadshot.toString()));
             System.out.println( team.roster[2].statHero1);
             player3Hero1.setImage(team.roster[2].statHero1);
-            player3Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[2].statRole + ".png"));
+            player3Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[2].statRole + ".png")));
             player3Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[2].socTwitch).toURI());
@@ -332,7 +332,7 @@ public class teamPageController implements Initializable {
             System.out.println( team.roster[3].statHero1URL);
             if(!(team.roster[3].statHero1 == null) && (team.roster[3].statHero1URL != "ana"))
             player4Hero1.setImage(team.roster[3].statHero1);
-            player4Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[3].statRole + ".png"));
+            player4Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[3].statRole + ".png")));
             player4Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[3].socTwitch).toURI());
@@ -359,7 +359,7 @@ public class teamPageController implements Initializable {
             System.out.println( team.roster[4].statHero1);
             if(!(team.roster[4].statHero1.equals(null)))
             player5Hero1.setImage(team.roster[4].statHero1);
-            player5Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[4].statRole + ".png"));
+            player5Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[4].statRole + ".png")));
             player5Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[4].socTwitch).toURI());
@@ -387,7 +387,7 @@ public class teamPageController implements Initializable {
             System.out.println( team.roster[5].statHero1);
             if(!(team.roster[5].statHero1.equals(null)))
             player6Hero1.setImage(team.roster[5].statHero1);
-            player6Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[5].statRole + ".png"));
+            player6Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[5].statRole + ".png")));
             player6Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[5].socTwitch).toURI());
@@ -414,7 +414,7 @@ public class teamPageController implements Initializable {
             System.out.println( team.roster[6].statHero1);
             if(!(team.roster[6].statHero1.equals(null)))
             player7Hero1.setImage(team.roster[6].statHero1);
-            player7Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[6].statRole + ".png"));
+            player7Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[6].statRole + ".png")));
             player7Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[6].socTwitch).toURI());
@@ -442,7 +442,7 @@ public class teamPageController implements Initializable {
             System.out.println( team.roster[7].statHero1);
             if(!(team.roster[7].statHero1.equals(null)))
             player8Hero1.setImage(team.roster[7].statHero1);
-            player8Role.setImage(new Image("/sample/OWL/HEROES/" + team.roster[7].statRole + ".png"));
+            player8Role.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/HEROES/" + team.roster[7].statRole + ".png")));
             player8Twitch.setOnMouseClicked (me -> {
                 try {
                     Desktop.getDesktop().browse(new URL(team.roster[7].socTwitch).toURI());
@@ -472,35 +472,35 @@ public class teamPageController implements Initializable {
 
     public void wipeScene(){
         player1Name.setText("NO PLAYER FOUND");
-        player1Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player1Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player1Hero1.setImage(null);
 
         player2Name.setText("NO PLAYER FOUND");
-        player2Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player2Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player2Hero1.setImage(null);
 
         player3Name.setText("NO PLAYER FOUND");
-        player3Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player3Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player3Hero1.setImage(null);
 
         player4Name.setText("NO PLAYER FOUND");
-        player4Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player4Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player4Hero1.setImage(null);
 
         player5Name.setText("NO PLAYER FOUND");
-        player5Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player5Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player5Hero1.setImage(null);
 
         player6Name.setText("NO PLAYER FOUND");
-        player6Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player6Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player6Hero1.setImage(null);
 
         player7Name.setText("NO PLAYER FOUND");
-        player7Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player7Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player7Hero1.setImage(null);
 
         player8Name.setText("NO PLAYER FOUND");
-        player8Headshot.setImage(new Image("/sample/OWL/NULL_PLAYER.png"));
+        player8Headshot.setImage(new Image(getClass( ).getResourceAsStream("/sample/OWL/NULL_PLAYER.png")));
         player8Hero1.setImage(null);
 
     }

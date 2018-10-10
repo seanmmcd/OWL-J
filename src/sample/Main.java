@@ -48,64 +48,64 @@ public class Main extends Application {
 
         window = primaryStage;
         window.setTitle("Overwatch E-Sports Official Standings");
-        window.initStyle(UNDECORATED);
-        window.getIcons().add(new Image("/sample/OWL/ICON.png"));
+        window.getIcons().add(new Image(getClass( ).getResourceAsStream("/sample/OWL/ICON.png")));
         window.setResizable(false);
-
-        File f = new File("C:/Users/Aspen/Documents/GitHub/OWL-J/src/sample/OWL/menubackground.mp4");
+/*
+        File f = new File(String.valueOf("/sample/OWL/menubackground.mp4"));
         Media media = null;
 
         try {
             media = new Media(f.toURI().toURL().toString());
         } catch (MalformedURLException e) {
             e.printStackTrace();
-        }
+        }*/
 
         gsonManager gsonMan = new gsonManager();
         gsonMan.init();
 
-        MediaPlayer player = new  MediaPlayer(media);
-        player.setAutoPlay(true);
-        MediaView backgroundLoop = new MediaView(player);
+        //MediaPlayer player = new  MediaPlayer(media);
+        //player.setAutoPlay(true);
+        //MediaView backgroundLoop = new MediaView(player);
 
-        backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
-        backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
+        //backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
+        //backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
 
-        homeScreen.getChildren().add(backgroundLoop);
+        //homeScreen.getChildren().add(backgroundLoop);
 
-        player.setCycleCount(MediaPlayer.INDEFINITE);
-        player.play();
+        //player.setCycleCount(MediaPlayer.INDEFINITE);
+        //player.play();
 
-        backgroundLoop.setY(25);
-        backgroundLoop.setX(0);
-        backgroundLoop.toBack();
+        //backgroundLoop.setY(25);
+        //backgroundLoop.setX(0);
+        //backgroundLoop.toBack();
+
+
 
         //DIVISION COVERS
-
-        ImageView atlanticImage = new ImageView(new Image("/sample/OWL/DIVISIONCOVERS/AtlanticCover.png"));
-        ImageView pacificImage  = new ImageView(new Image("/sample/OWL/DIVISIONCOVERS/PacificCover.png"));
-        ImageView owwcGlobe     = new ImageView(new Image("/sample/OWL/DIVISIONCOVERS/globe.png"));
-        ImageView owwcIcon      = new ImageView(new Image("/sample/OWL/DIVISIONCOVERS/OWWC.png"));
+        ImageView atlanticImage = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/DIVISIONCOVERS/AtlanticCover.png")));
+        ImageView pacificImage  = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/DIVISIONCOVERS/PacificCover.png")));
+        ImageView owwcGlobe     = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/DIVISIONCOVERS/globe.png")));
+        ImageView owwcIcon      = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/DIVISIONCOVERS/OWWC.png")));
 
         initializeDivisionButtons(atlanticImage, pacificImage, owwcIcon, owwcGlobe, homeScreen);
 
         //PACIFIC TEAMS
-        ImageView OWL_DALLAS_FUEL   = new ImageView(new Image("/sample/OWL/PACIFIC/OWL_DALLAS_FUEL.png"));
-        ImageView OWL_LA_GLADIATORS = new ImageView(new Image("/sample/OWL/PACIFIC/OWL_LA_GLADIATORS.png"));
-        ImageView OWL_LA_VALIANT    = new ImageView(new Image("/sample/OWL/PACIFIC/OWL_LA_VALIANT.png"));
-        ImageView OWL_SEOUL_DYNASTY = new ImageView(new Image("/sample/OWL/PACIFIC/OWL_SEOUL_DYNASTY.png"));
-        ImageView OWL_SF_SHOCK      = new ImageView(new Image("/sample/OWL/PACIFIC/OWL_SF_SHOCK.png"));
-        ImageView OWL_SHAI_DRAGONS  = new ImageView(new Image("/sample/OWL/PACIFIC/OWL_SHAI_DRAGONS.png"));
+        ImageView OWL_DALLAS_FUEL   = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_DALLAS_FUEL.png")));
+        ImageView OWL_LA_GLADIATORS = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_LA_GLADIATORS.png")));
+        ImageView OWL_LA_VALIANT    = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_LA_VALIANT.png")));
+        ImageView OWL_SEOUL_DYNASTY = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_SEOUL_DYNASTY.png")));
+        ImageView OWL_SF_SHOCK      = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_SF_SHOCK.png")));
+        ImageView OWL_SHAI_DRAGONS  = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/PACIFIC/OWL_SHAI_DRAGONS.png")));
 
         initializePacificButtons(OWL_DALLAS_FUEL, OWL_LA_GLADIATORS, OWL_LA_VALIANT, OWL_SEOUL_DYNASTY, OWL_SF_SHOCK, OWL_SHAI_DRAGONS, homeScreen);
 
         //ATLANTIC TEAMS
-        ImageView OWL_BOS_UPRISING  = new ImageView(new Image("/sample/OWL/ATLANTIC/OWL_BOS_UPRISING.png"));
-        ImageView OWL_FLA_MAYHEM    = new ImageView(new Image("/sample/OWL/ATLANTIC/OWL_FLOR_MAYHEM.png"));
-        ImageView OWL_HOU_OUTLAWS   = new ImageView(new Image("/sample/OWL/ATLANTIC/OWL_HOUS_OUTLAWS.png"));
-        ImageView OWL_LON_SPITFIRE  = new ImageView(new Image("/sample/OWL/ATLANTIC/OWL_LNDN_SPITFIRE.png"));
-        ImageView OWL_NYC_EXCEL     = new ImageView(new Image("/sample/OWL/ATLANTIC/OWL_NY_XL.png"));
-        ImageView OWL_PHI_FUSION    = new ImageView(new Image("/sample/OWL/ATLANTIC/OWL_PHILLY_FUSION.png"));
+                    ImageView OWL_BOS_UPRISING  = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_BOS_UPRISING.png")));
+                    ImageView OWL_FLA_MAYHEM    = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_FLOR_MAYHEM.png")));
+                    ImageView OWL_HOU_OUTLAWS   = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_HOUS_OUTLAWS.png")));
+                    ImageView OWL_LON_SPITFIRE  = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_LNDN_SPITFIRE.png")));
+                    ImageView OWL_NYC_EXCEL     = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_NY_XL.png")));
+                    ImageView OWL_PHI_FUSION    = new ImageView(new Image(getClass( ).getResourceAsStream("/sample/OWL/ATLANTIC/OWL_PHILLY_FUSION.png")));
 
         initializeAtlanticButtons(OWL_BOS_UPRISING, OWL_FLA_MAYHEM, OWL_HOU_OUTLAWS, OWL_LON_SPITFIRE, OWL_NYC_EXCEL, OWL_PHI_FUSION, homeScreen);
 

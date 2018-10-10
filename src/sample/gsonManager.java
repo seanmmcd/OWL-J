@@ -139,7 +139,6 @@ public class gsonManager {
                 statHeadshot = player.get("headshot").getAsString();
                 if(!hero1.equals("X"))
                 try {
-                    System.out.println(hero1);
                     teamArray[ii].setPlayer(new Player(name, twitter, twitch, hero1, hero2, statRole, new URL(statHeadshot)), jj);
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
@@ -153,12 +152,6 @@ public class gsonManager {
     }
 
     public void printTeam(Team team){
-        System.out.println(team.getTeamName());
-        for(int ii = 0; ii < 10; ii++){
-            if(team.roster[ii] != null) {
-                System.out.println(team.roster[ii].name + " - " + team.roster[ii].statRole + " | Heroes: " + team.roster[ii].statHero1 + "\n\tHeadshot: "+ team.roster[ii].statHeadshot +"\n\t Twitter: " + team.roster[ii].socTwitter + "\n\t Twitch: " + team.roster[ii].socTwitch);
-            }
-        }System.out.println();
         return;
     }
 }
