@@ -50,7 +50,7 @@ public class Main extends Application {
         window.setTitle("Overwatch E-Sports Official Standings");
         window.getIcons().add(new Image(getClass( ).getResourceAsStream("/sample/OWL/ICON.png")));
         window.setResizable(false);
-/*
+
         File f = new File(String.valueOf("/sample/OWL/menubackground.mp4"));
         Media media = null;
 
@@ -58,26 +58,26 @@ public class Main extends Application {
             media = new Media(f.toURI().toURL().toString());
         } catch (MalformedURLException e) {
             e.printStackTrace();
-        }*/
+        }
 
         gsonManager gsonMan = new gsonManager();
         gsonMan.init();
 
-        //MediaPlayer player = new  MediaPlayer(media);
-        //player.setAutoPlay(true);
-        //MediaView backgroundLoop = new MediaView(player);
+        MediaPlayer player = new  MediaPlayer(media);
+        player.setAutoPlay(true);
+        MediaView backgroundLoop = new MediaView(player);
 
-        //backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
-        //backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
+        backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
+        backgroundLoop.fitWidthProperty().bind(homeScreen.widthProperty());
 
-        //homeScreen.getChildren().add(backgroundLoop);
+        homeScreen.getChildren().add(backgroundLoop);
 
-        //player.setCycleCount(MediaPlayer.INDEFINITE);
-        //player.play();
+        player.setCycleCount(MediaPlayer.INDEFINITE);
+        player.play();
 
-        //backgroundLoop.setY(25);
-        //backgroundLoop.setX(0);
-        //backgroundLoop.toBack();
+        backgroundLoop.setY(25);
+        backgroundLoop.setX(0);
+        backgroundLoop.toBack();
 
 
 
