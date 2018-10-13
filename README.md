@@ -1,5 +1,5 @@
 # OWL-J
-Official Overwatch League rankings for both Atlantic, Pacific, and 2018 Overwatch World Cup Seasons.
+Official Overwatch League rankings for both Atlantic, Pacific, and 2018 Overwatch World Cup Seasons. Due to offseason, no viable data to list team ranks with.
 
 # JSON PULLS FROM API
 Pulls all data on access from api.overwatch.com, builds json objects from this. Utilizes team ID to find proper icon, etc.
